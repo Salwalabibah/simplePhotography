@@ -1,0 +1,47 @@
+body{
+    /* text-align: center; */
+    font-family: monospace;
+}
+
+.container{
+    width: 70%;
+    margin: 50 80 80 330;
+}
+#inputan input, #inputan select option{
+    width: 280px;
+    height: 27px;
+    background-color: #f5e2d3;
+    border: none;
+    /* border-radius: 5px; */
+    padding: 10px;
+}
+
+td{
+    width: 300px;
+}
+
+tr #label{
+    padding: 15 0 5 8;
+}
+
+#inputan #inp, #sel > option{
+    width: 590px;
+}
+
+button{
+    margin: 20 25 0 0;
+    width: 150px;
+    background-color: #f5e2d3;
+    border: none;
+    /* border-radius: 5px; */
+    padding: 10px;
+    font-family: monospace;
+    font-size: 10pt;
+}
+
+a{
+    color: black;
+    font-size: 12pt;
+    opacity: 70%;
+    margin: -s10;
+}

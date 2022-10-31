@@ -1,0 +1,294 @@
+body{
+    margin: 0;
+    width: 95%;
+    vertical-align: middle;
+    margin-left: 30px;
+    height: 600px;
+    /* align-items: center;
+    align-content: center; */
+}
+
+.container{
+    margin: 0 auto;
+}
+/* navigation bar */
+.nav-bar{
+    background-color: transparent;
+    overflow: hidden;
+    position: -webkit-sticky;
+    margin-bottom: 1px;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#logo, #link{
+    color: #2b2723;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-bar .link-kanan{
+    float: right;
+    margin-right: 30px;
+}
+
+#logo{
+    display: block;
+    float: left;
+    width: 200px;
+    height: 20px;
+    /* padding: 2px; */
+    font-size: 15pt;
+    font-family: serif;
+    font-weight: bold;
+}
+
+#link{
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    padding: 13px;
+    font-size: 11pt;
+    letter-spacing: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+#link:hover{
+    background-color: #f5e2d3;
+    color: #432a1f;
+}
+
+/* main page */
+/* slide show */
+.container{
+    padding: 0 0 0 0;
+}
+
+.slide{
+    background-color: transparent;
+    max-width: 95%;
+    position: relative;
+    margin: auto;
+}
+
+.imgslide{
+    display: block;
+}
+
+img{
+    margin: 0 aut;
+    width: 100%;
+    height: 500px;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    padding: 16px;
+    color: rgb(255, 244, 244);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 3px;
+    user-select: none;
+    background-color: rgb(0, 0, 0.8);
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgb(255, 255 , 255, 0.8);
+    color: rgb(0, 0, 0);
+}
+
+.text2, .text3, .text1, .text4{
+    font-size: 15pt;
+    /* padding: 8px 12px; */
+    position: absolute;
+    /* bottom: 45%; */
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-family: serif;
+    margin: 0 auto;
+}
+
+.text1, .text4 {
+    color: #2b2723; 
+    text-align: center;
+}
+
+.text1 h1{
+    /* text-align: center; */
+    width: 40%;
+    margin: 25 auto;
+    font-size: 25pt;
+}
+.text2{
+    color: #2b2723;
+}
+
+.text4{
+    text-align: right;
+    width: 95%;
+    margin-left: 2%;
+    color: #f5e2d3;
+}
+.text3{
+    margin-top: 1%;
+    color: #432a1f;
+    text-align: left ;
+    margin-left: 5%;
+    width: 50%;
+}
+
+.text1 p, .text2 p, .text3 p, .text4 p{
+    text-transform: capitalize;
+    font-size: 18pt;
+    margin-left: 0;
+}
+
+.text1 p{
+    margin-top: 30%;
+    color: #859ea3;
+    font-size: 15pt;
+}
+.text2 p{
+    margin-top: 32%;
+    color: #f5e2d3;
+}
+
+.text3 p{
+    margin-top: 55%;
+    color: #432a1f;
+    text-align: left;
+    margin-right: 10%;
+}
+
+.text4 p{
+    text-align: right;
+    color: #2b2723;
+}
+
+.slide .numberslide{
+    color: rgb(177, 177, 177);
+    font-size: 45pt;
+    padding: 8px 12 px;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+}
+
+/* page gallery */
+.gallery{
+    margin: 30 0 0 50;
+}
+
+#judul{
+    color: #2b2723;
+    font-size: 20pt;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 18px;
+    font-family: serif;
+    transform: rotate(-90deg);
+    float: left; 
+    margin: 210 0 0 -180;
+}
+
+.galCon{
+    margin: -15 80 0 70;
+    text-align: center;
+}
+
+/* button */
+.btn{
+    text-align: center;
+    margin: 50 0 0 50;
+}
+.pagebtn{
+    text-align: center;
+    margin: 10 0 0 10;
+    width: 90px;
+    height: 30px;
+    border-radius: 60px;
+    background-color: transparent;
+    border:2px solid #2b2723;
+    font-family: serif;
+}
+
+.pagebtn.active{
+    background: #f5e2d3;
+}
+
+.pagebtn:hover{
+    transition: 0.6s ease;
+    background-color: #f5e2d3;
+}
+.row{
+    margin: 20 auto;
+}
+.content{
+    display: inline-block;
+    /* margin: 2 auto; */
+    padding: 5px;
+}
+
+.location{
+    text-align: center;
+    width: 95%;
+    margin: 50 20 0 20;
+    background-color: #f5e2d3;
+    height: 65%;
+    padding: 17.5px;
+}
+
+.judul{
+    text-transform: uppercase;
+    font-family: serif;
+    text-align: center;
+    letter-spacing: 7px;
+    font-family: serif;
+    font-size: 18pt;
+}
+
+iframe{
+    width: 90%;
+}
+
+
+#footer{
+    font-family: serif;
+    text-align: center;
+    height: 8%;
+    width: 98%;
+    background-color: #2b2723;
+    margin: 30 20 0 20;
+    color: #f5e2d3;
+}
+
+#t1{
+    float: left;
+    margin: 15 0 0 60;
+
+}
+
+.kanan{
+    float: right;
+    margin: 0 60 0 0;
+}
+
+#ig{
+    margin: -5 auto;
+    opacity: 80%;
+    color: #f5e2d3;
+}

@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html">&#10094 Back</a>
+        <h3 style="font-family: serif;">Please Read Carefully!</h3>
+        <p>
+            -each session is booked at least 7 days before due date <br>
+            -Its non cancellable booking or refundable<br>
+
+            <form onsubmit="return validateForm()" id="form" method="post">
+                <table>
+                    <tr>
+                        <td id="label" class="baris1">Name *</td>
+                        <td id="label" class="baris1">Email *</td>
+                    </tr>
+                    <tr>
+                        <td id="inputan"><input type="text" name="name" id=""></td>
+                        <td id="inputan"><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td id="label">Phone Number</td>
+                    </tr>
+                    <tr>            
+                        <td id="inputan" colspan="2"><input type="text" id="inp"></td>
+                    </tr>
+                    <tr>
+                        <td id="label">Add Your Message</td>
+                    </tr>
+                    <tr>            
+                        <td id="inputan" colspan="2"><input type="text" id="inp"></td>
+                    </tr>
+                    <tr>
+                        <td id="label">Select Date and Time *</td>
+                    </tr>
+                    <tr>
+                        <td id="inputan" colspan="2"><input type="datetime-local" name="date" id="inp" ></td>            
+                    </tr>
+                    <tr>
+                        <td><button type="reset">Cancel</button></td>
+                        <td style="text-align: right;"><button type="submit" value="submit">Book Now</button></td>
+                    </tr>
+                </table>
+            </form>
+        </p>
+    </div>
+
+    <script>
+        function validateForm(){
+            var nama = document.forms["form"]["name"].value;
+            var mail = document.forms["form"]["email"].value;
+            var hari = document.forms["form"]["date"].value;
+
+            if (nama == "" && mail == "" && hari == "" || nama == "" && mail == "" || mail == "" && hari =="" || nama == "" && hari == ""){
+                alert("Silahkan lengkapi data terlebih dahulu!");
+                return false;
+            }else if (nama == ""){j
+                alert("Nama Lengkap harus diisi");
+                return false;
+            }else if (mail == ""){
+                alert("Alamat Email harus diisi");
+                return false;
+            }else if(hari == ""){
+                alert("Tanggal dan Waktu harus diisi");
+                return false;
+            }else{
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
